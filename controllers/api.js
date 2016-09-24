@@ -15,6 +15,7 @@ exports.getKey = (req, res) => {
   key.generateKeyPair();
   var user = req.user;
   user.publicKey = key.exportKey('pkcs1-public');
+  console.log(key.getMaxMessageSize());
   user.save().then(u => {
     res.set({"Content-Disposition":"attachment; filename=\"id_rsa\""});
     res.send(key.exportKey());

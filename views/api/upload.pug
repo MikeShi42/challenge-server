@@ -6,18 +6,11 @@ block content
       i.fa.fa-upload
       | File Upload
 
-  .btn-group.btn-group-justified
-    a.btn.btn-success(href='https://github.com/expressjs/multer', target='_blank')
-      i.fa.fa-book
-      | Multer Documentation
-    a.btn.btn-success(href='http://codepen.io/search/pens?q=custom+file+upload&limit=all&type=type-pens', target='_blank')
-      i.fa.fa-laptop
-      | Customize File Upload
-
   h3 File Upload Form
   .row
     .col-sm-6
-      p All files will be uploaded to "/uploads" directory.
+      p Select a file to upload below, file will be encrypted with your last 
+        generated public key pair.
       form(role='form', enctype='multipart/form-data', method='POST')
         .form-group
           label.control-label File Input
