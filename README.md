@@ -17,6 +17,9 @@ cd challenge-server
 npm install
 
 node app.js
+
+# Start mongo
+mongod
 ```
 
 To Test
