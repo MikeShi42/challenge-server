@@ -9,13 +9,9 @@ const userSchema = new mongoose.Schema({
   passwordResetExpires: Date,
 
   facebook: String,
-  twitter: String,
-  google: String,
   github: String,
-  instagram: String,
-  linkedin: String,
-  steam: String,
   tokens: Array,
+  publicKey: String,
 
   profile: {
     name: { type: String, default: '' },
